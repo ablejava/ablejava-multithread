@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fixdb-exam:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="fixdb-exam.war">
+      <element id="artifact" artifact-name="fixdb-exam:war exploded" />
+    </root>
+  </artifact>
+</component>

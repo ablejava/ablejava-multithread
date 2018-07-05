@@ -1,3 +1,4 @@
+/*
 package com.zhihuishu.JUC.TestJuc;
 
 import java.time.Duration;
@@ -64,9 +65,11 @@ public class TestForkJoinPool {
 
 class ForkJoinSumCalculate extends RecursiveTask<Long>{
 
-	/**
+	*/
+/**
 	 * 
-	 */
+	 *//*
+
 	private static final long serialVersionUID = -259195479995561737L;
 	
 	private long start;
@@ -105,3 +108,4 @@ class ForkJoinSumCalculate extends RecursiveTask<Long>{
 	}
 	
 }
+*/

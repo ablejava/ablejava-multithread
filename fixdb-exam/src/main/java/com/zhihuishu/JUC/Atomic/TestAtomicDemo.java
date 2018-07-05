@@ -26,7 +26,7 @@ public class TestAtomicDemo {
 	public static void main(String[] args) {
 		AtomicDemo ad = new AtomicDemo();
 		
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 100; i++) {
 			new Thread(ad).start();
 		}
 	}
@@ -37,13 +37,13 @@ class AtomicDemo implements Runnable{
 	
 //	private volatile int serialNumber = 0;
 	
-	private AtomicInteger serialNumber = new AtomicInteger(0);
+	private AtomicInteger serialNumber = new AtomicInteger(1);
 
 	@Override
 	public void run() {
 		
 		try {
-			Thread.sleep(200);
+			Thread.sleep(10);
 		} catch (InterruptedException e) {
 		}
 		

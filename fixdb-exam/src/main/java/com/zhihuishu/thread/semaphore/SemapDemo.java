@@ -13,7 +13,8 @@ public class SemapDemo implements Runnable {
     public void run() {
 
         try {
-            semp.acquire();
+            semp.acquire();// 方法会一致等待
+            // semp.tryAcquire() // 方法尝试获得锁，如果成功返回true执行否则放回false释放
             // 模拟耗时操作
             Thread.sleep(2000);
             System.out.println(Thread.currentThread().getId()+": done !");

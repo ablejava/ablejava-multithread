@@ -4,6 +4,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by Administrator on 2018/7/8.
+ * 重入锁的中断响应
  */
 public class IntLock implements Runnable {
     public static ReentrantLock lock1 = new ReentrantLock();
@@ -52,6 +53,6 @@ public class IntLock implements Runnable {
         t1.start();
         t2.start();
         Thread.sleep(1000);
-        t2.interrupt();// 中断其中一个线程
+        t2.interrupt();// 中断其中一个线程,让t2放弃已经获得的锁
     }
 }

@@ -24,6 +24,7 @@ public class PlusTest {
         for (int i = 0; i < 10; i++) {
             threads[i].join();
         }
+        Thread.sleep(1000);
         System.out.println(i);
     }
 }
